@@ -5,7 +5,7 @@ function MilkStompServer() {
 	
 	var MilkSocket = require('net/MilkSocket');
 	var Player = require('player/Player');
-	var router = new require('router/Router')();
+	var router = new (require('router/MilkRouter'))();
 	
 	var players = {};
 
